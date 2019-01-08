@@ -5,6 +5,7 @@ body
     font-size: 16px;
     color: white;
     background-color: black;
+    
 }
 
 span
@@ -37,12 +38,38 @@ span
     
 }
 
+#showCertificateButton 
+{
+    background-color: #6bf;
+    border-radius: 8px;
+    color: black;
+    font-size: 18px;
+    padding: 8px;
+    margin-top: 10px;
+}
+
+#hideCertificateButton
+{
+    background-color: #6bf;
+    border-radius: 8px;
+    color: black;
+    font-size: 18px;
+    padding: 8px;
+    margin-top: 5px;
+    display: none;
+}
+
+#certificate
+{
+    max-width: 340px;
+}
+
 
 /* This will center the navbar in the middle of the page. */
 .navbar 
 {
     margin: auto;
-    width: 30%;
+    width: 35%;
     overflow: hidden;
     padding: 10px;
 }
@@ -119,6 +146,13 @@ span
     text-decoration: none;
 }
 
+
+.certificates-wrapper
+{
+    display: none;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-column-gap: 0.5em;
+}
 /* Grid Layout in the index.html page */
 
 .index-wrapper
@@ -147,3 +181,33 @@ span
 {
     text-align: center;
 }
+
+
+/* Grid layout in the projects.html page */
+
+.project-wrapper
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5em
+}
+
+.project-wrapper div
+{
+
+    padding: 5px;
+    text-align: center
+}
+
+.project-wrapper div.span
+{
+    text-align: center;
+}
+
+.project-wrapper div img
+{
+    max-width: 200px;
+    height: 200px;
+    padding: 10px
+}
+
